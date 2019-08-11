@@ -10,5 +10,14 @@ var computerGuess = [];
 
 //Initial computer letter
 window.onload = function() {
-    var
+    var compGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    computerGuess.push(compGuess);
+    console.log(computerGuess[0]);
+}
+
+//Game Time!
+document.onkeyup = function(event) {
+    var playerGuess = event.key;
+    letterGuessed.push(playerGuess);
+    console.log(computerGuess[0]);
 }
